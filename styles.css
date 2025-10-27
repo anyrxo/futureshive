@@ -728,10 +728,12 @@ body {
 
 .modal-content {
     position: relative;
-    max-width: 500px;
+    max-width: 600px;
     width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
     margin: 2rem;
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 32px;
     animation: slideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -801,20 +803,14 @@ body {
     line-height: 1.6;
 }
 
-.modal-cta-wrapper {
-    margin-top: 2rem;
-    text-align: center;
+.airtable-embed-wrapper {
+    margin-top: 1.5rem;
+    width: 100%;
 }
 
-.modal-description {
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-}
-
-.modal-cta-wrapper .btn {
-    margin-bottom: 1rem;
+.airtable-embed {
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 /* Form */
