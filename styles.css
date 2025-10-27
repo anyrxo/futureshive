@@ -1011,6 +1011,14 @@ body {
 }
 
 @media (max-width: 640px) {
+    .badge {
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem;
+        margin-bottom: 1.5rem;
+        white-space: normal;
+        text-align: center;
+    }
+
     .hero-title {
         font-size: 1.75rem;
         line-height: 1.3;
@@ -1036,6 +1044,13 @@ body {
         grid-template-columns: 1fr;
     }
 
+    /* Hide all page CTAs on mobile - only show floating button */
+    .hero .btn-primary,
+    .results .btn-primary,
+    .cta-section .btn-primary {
+        display: none !important;
+    }
+
     .btn-large {
         width: 100%;
         font-size: 1rem;
@@ -1051,9 +1066,11 @@ body {
         padding: 2rem 1.5rem;
     }
 
+    /* Position notification popup above floating button */
     .notification-popup {
         right: 1rem;
         left: 1rem;
+        bottom: 90px;
         max-width: none;
     }
 
