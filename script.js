@@ -293,34 +293,34 @@ setTimeout(() => {
 // Notification Popup functionality
 const notifications = [
     {
-        name: "Sultan from Abu Dhabi",
-        message: "just joined The Hive to accelerate their path to consistent profitability",
-        time: "11 minutes ago",
-        initial: "S"
-    },
-    {
-        name: "Marcus from London",
-        message: "just secured their spot inside The Hive mentorship program",
-        time: "23 minutes ago",
+        name: "Mike from Chicago",
+        message: "just got access to the strategy",
+        time: "8 minutes ago",
         initial: "M"
     },
     {
-        name: "Yuki from Tokyo",
-        message: "just unlocked exclusive access to The Hive trading strategy",
-        time: "47 minutes ago",
-        initial: "Y"
+        name: "Sarah from Austin",
+        message: "just joined",
+        time: "34 minutes ago",
+        initial: "S"
     },
     {
-        name: "Carlos from Miami",
-        message: "just gained entry to The Hive's proven methodology",
+        name: "James from Seattle",
+        message: "just started learning the strategy",
         time: "1 hour ago",
-        initial: "C"
+        initial: "J"
     },
     {
-        name: "Amara from Lagos",
-        message: "just became part of The Hive elite trading community",
+        name: "Alex from Phoenix",
+        message: "just signed up",
         time: "2 hours ago",
         initial: "A"
+    },
+    {
+        name: "Jordan from Denver",
+        message: "just got access",
+        time: "3 hours ago",
+        initial: "J"
     }
 ];
 
