@@ -801,6 +801,22 @@ body {
     line-height: 1.6;
 }
 
+.modal-cta-wrapper {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.modal-description {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.modal-cta-wrapper .btn {
+    margin-bottom: 1rem;
+}
+
 /* Form */
 #leadForm {
     display: flex;
