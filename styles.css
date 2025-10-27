@@ -735,7 +735,9 @@ body {
     margin: 2rem;
     padding: 2rem;
     border-radius: 32px;
-    animation: slideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 @keyframes fadeIn {
