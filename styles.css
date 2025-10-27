@@ -118,15 +118,15 @@ body {
 /* Navigation */
 .navbar {
     position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% - 40px);
-    max-width: 1200px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     z-index: 1000;
-    border-radius: 20px;
+    border-radius: 0;
     padding: 0;
     animation: slideDown 0.5s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 @keyframes slideDown {
@@ -144,7 +144,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1.25rem 2rem;
+    max-width: 1400px;
 }
 
 .logo {
@@ -950,9 +951,8 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .navbar {
-        width: calc(100% - 20px);
-        top: 10px;
+    .navbar .container {
+        padding: 1rem 1.5rem;
     }
 }
 
