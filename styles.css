@@ -391,14 +391,11 @@ body {
 .stat-number {
     font-size: 4.5rem;
     font-weight: 900;
-    background: var(--primary-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #ffffff;
     line-height: 1;
     margin-bottom: 0.75rem;
-    text-shadow: 0 0 30px rgba(30, 144, 255, 0.6);
-    filter: drop-shadow(0 4px 12px rgba(30, 144, 255, 0.5));
+    text-shadow: 0 0 30px rgba(30, 144, 255, 0.8), 0 0 60px rgba(30, 144, 255, 0.4);
+    filter: drop-shadow(0 4px 12px rgba(30, 144, 255, 0.6));
     display: block;
 }
 
