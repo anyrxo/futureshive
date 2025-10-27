@@ -293,34 +293,34 @@ setTimeout(() => {
 // Notification Popup functionality
 const notifications = [
     {
-        name: "Emma from Austin",
-        message: "just started their trading journey with FutureShive",
-        time: "2 hours ago",
-        initial: "E"
-    },
-    {
-        name: "James from Seattle",
-        message: "achieved their first profitable week",
-        time: "4 hours ago",
-        initial: "J"
-    },
-    {
-        name: "Sofia from Denver",
-        message: "joined the trading community",
-        time: "6 hours ago",
+        name: "Sultan from Abu Dhabi",
+        message: "just joined The Hive to accelerate their path to consistent profitability",
+        time: "11 minutes ago",
         initial: "S"
     },
     {
-        name: "Michael from Boston",
-        message: "unlocked advanced trading strategies",
-        time: "8 hours ago",
+        name: "Marcus from London",
+        message: "just secured their spot inside The Hive mentorship program",
+        time: "23 minutes ago",
         initial: "M"
     },
     {
-        name: "Olivia from Portland",
-        message: "completed the foundation course",
-        time: "12 hours ago",
-        initial: "O"
+        name: "Yuki from Tokyo",
+        message: "just unlocked exclusive access to The Hive trading strategy",
+        time: "47 minutes ago",
+        initial: "Y"
+    },
+    {
+        name: "Carlos from Miami",
+        message: "just gained entry to The Hive's proven methodology",
+        time: "1 hour ago",
+        initial: "C"
+    },
+    {
+        name: "Amara from Lagos",
+        message: "just became part of The Hive elite trading community",
+        time: "2 hours ago",
+        initial: "A"
     }
 ];
 
@@ -439,4 +439,4 @@ document.addEventListener('visibilitychange', () => {
     }
 });
 
-console.log('🚀 FutureShive landing page loaded successfully!');
+console.log('🚀 FuturesHive landing page loaded successfully!');
