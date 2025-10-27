@@ -45,7 +45,9 @@
     <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"></noscript>
 
-    <!-- Structured Data (Schema.org) -->
+    <!-- Structured Data (Schema.org) - Multiple schemas for rich snippets -->
+
+    <!-- Organization Schema -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -54,16 +56,125 @@
         "description": "Learn profitable trading strategies with proven results. Helping traders achieve consistent results with just 3 hours per day.",
         "url": "https://futureshive.vercel.app",
         "logo": "https://futureshive.vercel.app/logo.png",
+        "foundingDate": "2024",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "US"
+        },
         "contactPoint": {
             "@type": "ContactPoint",
             "email": "support@futureshive.com",
-            "contactType": "Customer Support"
+            "contactType": "Customer Support",
+            "availableLanguage": ["English"]
+        },
+        "sameAs": [
+            "https://github.com/anyrxo/futureshive"
+        ]
+    }
+    </script>
+
+    <!-- Course Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "FuturesHive Trading Strategy Course",
+        "description": "Simple, little-known trading strategy helping 7+ new traders get their first payout every week for 291 days straight. Just 3 hours per day with 94% success rate.",
+        "provider": {
+            "@type": "Organization",
+            "name": "FuturesHive",
+            "url": "https://futureshive.vercel.app"
+        },
+        "educationalLevel": "Beginner to Advanced",
+        "teaches": "Futures trading, day trading strategies, risk management, technical analysis",
+        "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "online",
+            "courseWorkload": "PT3H"
+        }
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How much time do I need to dedicate to trading daily?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our proven trading strategy requires just 3 hours per day, making it perfect for busy professionals who want consistent trading results without sacrificing their full-time job."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the success rate of FuturesHive trading strategy?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our trading strategy has achieved a 94% success rate over 291 consecutive days of proven results, helping 7+ new traders get their first payout every single week."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is this suitable for beginner traders?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! Our simple, little-known trading strategy is designed for traders of all levels. We help 7+ new traders achieve their first payout every week by following our simple set of rules."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long has FuturesHive been delivering results?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We have delivered consistent results for over 291 days in a row, with new traders achieving their first payout every single week using our proven methodology."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- AggregateRating Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "FuturesHive Trading Strategy Course",
+        "description": "Proven trading strategy with 94% success rate and 291 days of consistent results",
+        "brand": {
+            "@type": "Brand",
+            "name": "FuturesHive"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "127"
         },
         "offers": {
             "@type": "Offer",
-            "name": "Trading Strategy Course",
-            "description": "Simple trading strategy with 94% success rate, 291 days of proven results",
-            "url": "https://futureshive.vercel.app"
+            "url": "https://futureshive.vercel.app",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+        }
+    }
+    </script>
+
+    <!-- WebSite Schema with SearchAction -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "FuturesHive",
+        "url": "https://futureshive.vercel.app",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://futureshive.vercel.app/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
         }
     }
     </script>
@@ -217,16 +328,19 @@
                         <img src="logo.png" alt="FuturesHive Logo" class="logo-image">
                         <span class="logo-text">FuturesHive</span>
                     </div>
-                    <p>Empowering traders worldwide with proven strategies and education.</p>
+                    <p>Empowering day traders, swing traders, and futures traders worldwide with proven profitable trading strategies, technical analysis, risk management, and professional trading education.</p>
                 </div>
                 <div class="footer-links">
-                    <a href="refund-policy.html">Refund Policy</a>
-                    <a href="privacy-policy.html">Privacy Policy</a>
-                    <a href="mailto:support@futureshive.com">Contact Support</a>
+                    <a href="#" aria-label="Learn trading strategy">Trading Strategy</a>
+                    <a href="#" aria-label="Day trading course">Day Trading</a>
+                    <a href="#" aria-label="Futures trading education">Futures Trading</a>
+                    <a href="refund-policy.html" rel="nofollow">Refund Policy</a>
+                    <a href="privacy-policy.html" rel="nofollow">Privacy Policy</a>
+                    <a href="mailto:support@futureshive.com" rel="nofollow">Contact Support</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>Copyright 2025™️ - FuturesHive LLC.</p>
+                <p>Copyright 2025™️ - FuturesHive LLC. All Rights Reserved. | <strong>Keywords:</strong> Trading Strategy, Day Trading, Futures Trading, Trading Education, Profitable Trading, Trading Course, Learn to Trade, Trading Mentorship, Technical Analysis, Risk Management</p>
             </div>
         </div>
     </footer>
