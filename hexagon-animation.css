@@ -1,0 +1,252 @@
+/* Hexagon Animated Background */
+.hexagon-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hexagon-grid {
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    top: -25%;
+    left: -25%;
+}
+
+/* Individual Hexagon */
+.hexagon {
+    position: absolute;
+    width: 100px;
+    height: 115px;
+    opacity: 0.15;
+}
+
+.hexagon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ffc107, #ff9800);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    animation: hexPulse 4s ease-in-out infinite;
+}
+
+/* Hexagon border glow */
+.hexagon::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(135deg, #ffd54f, #ffab00);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    opacity: 0;
+    filter: blur(8px);
+    animation: hexGlow 6s ease-in-out infinite;
+}
+
+/* Pulsing animation */
+@keyframes hexPulse {
+    0%, 100% {
+        opacity: 0.15;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.3;
+        transform: scale(1.05);
+    }
+}
+
+/* Glow animation */
+@keyframes hexGlow {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}
+
+/* Electricity/Lightning effect between hexagons */
+.electric-connection {
+    position: absolute;
+    height: 2px;
+    background: linear-gradient(90deg,
+        transparent,
+        #ffc107 20%,
+        #ffeb3b 50%,
+        #ffc107 80%,
+        transparent
+    );
+    transform-origin: left center;
+    opacity: 0;
+    animation: electricFlow 3s ease-in-out infinite;
+    box-shadow:
+        0 0 10px #ffc107,
+        0 0 20px #ffc107,
+        0 0 30px #ffc107;
+}
+
+@keyframes electricFlow {
+    0%, 100% {
+        opacity: 0;
+        width: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+        width: 100%;
+    }
+    90% {
+        opacity: 1;
+    }
+}
+
+/* Electric spark particles */
+.spark {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #ffeb3b;
+    border-radius: 50%;
+    box-shadow:
+        0 0 10px #ffc107,
+        0 0 20px #ffc107,
+        0 0 30px #ffc107;
+    opacity: 0;
+    animation: sparkTravel 2s linear infinite;
+}
+
+@keyframes sparkTravel {
+    0% {
+        opacity: 0;
+        transform: translateX(0) scale(0);
+    }
+    10% {
+        opacity: 1;
+        transform: translateX(20px) scale(1);
+    }
+    90% {
+        opacity: 1;
+        transform: translateX(calc(100% - 20px)) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%) scale(0);
+    }
+}
+
+/* Energy wave effect */
+.energy-wave {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgba(255, 193, 7, 0.3);
+    border-radius: 50%;
+    animation: waveExpand 4s ease-out infinite;
+}
+
+@keyframes waveExpand {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+/* Floating energy particles */
+.energy-particle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: radial-gradient(circle, #ffeb3b, #ffc107);
+    border-radius: 50%;
+    box-shadow: 0 0 15px #ffc107;
+    animation: floatParticle 8s ease-in-out infinite;
+    opacity: 0.6;
+}
+
+@keyframes floatParticle {
+    0%, 100% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.6;
+    }
+    50% {
+        transform: translateY(-100px) translateX(50px);
+        opacity: 0.8;
+    }
+    90% {
+        opacity: 0.6;
+    }
+}
+
+/* Delay variations for staggered animations */
+.hexagon:nth-child(2n) { animation-delay: 0.5s; }
+.hexagon:nth-child(3n) { animation-delay: 1s; }
+.hexagon:nth-child(4n) { animation-delay: 1.5s; }
+.hexagon:nth-child(5n) { animation-delay: 2s; }
+
+.electric-connection:nth-child(2n) { animation-delay: 0.3s; }
+.electric-connection:nth-child(3n) { animation-delay: 0.6s; }
+.electric-connection:nth-child(4n) { animation-delay: 0.9s; }
+
+.spark:nth-child(2n) { animation-delay: 0.4s; }
+.spark:nth-child(3n) { animation-delay: 0.8s; }
+.spark:nth-child(4n) { animation-delay: 1.2s; }
+
+.energy-particle:nth-child(2n) { animation-delay: 1s; }
+.energy-particle:nth-child(3n) { animation-delay: 2s; }
+.energy-particle:nth-child(4n) { animation-delay: 3s; }
+
+/* Lightning bolt effect */
+.lightning-bolt {
+    position: absolute;
+    width: 3px;
+    height: 100px;
+    background: linear-gradient(180deg,
+        transparent,
+        #ffeb3b 30%,
+        #ffc107 50%,
+        #ffeb3b 70%,
+        transparent
+    );
+    box-shadow:
+        0 0 10px #ffc107,
+        0 0 20px #ffc107,
+        0 0 30px #ffc107,
+        0 0 40px #ff9800;
+    opacity: 0;
+    animation: lightningStrike 5s ease-in-out infinite;
+    filter: blur(1px);
+}
+
+@keyframes lightningStrike {
+    0%, 90%, 100% {
+        opacity: 0;
+    }
+    92%, 94%, 96% {
+        opacity: 1;
+    }
+    93%, 95% {
+        opacity: 0.3;
+    }
+}
+
+.lightning-bolt:nth-child(2n) { animation-delay: 2.5s; }
+.lightning-bolt:nth-child(3n) { animation-delay: 4s; }

@@ -7,16 +7,17 @@
 }
 
 :root {
-    --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    --primary-gradient: linear-gradient(135deg, #ffc107 0%, #ff9800 100%);
+    --secondary-gradient: linear-gradient(135deg, #ffeb3b 0%, #ffc107 100%);
+    --accent-gradient: linear-gradient(135deg, #ffd54f 0%, #ffab00 100%);
     --dark-bg: #0a0b1e;
     --darker-bg: #050614;
-    --glass-bg: rgba(255, 255, 255, 0.05);
-    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-bg: rgba(255, 193, 7, 0.08);
+    --glass-border: rgba(255, 193, 7, 0.15);
     --text-light: #ffffff;
     --text-gray: #b4b4c8;
     --blur-amount: 20px;
+    --glow-yellow: rgba(255, 193, 7, 0.4);
 }
 
 html {
@@ -209,13 +210,14 @@ body {
 
 .btn-primary {
     background: var(--primary-gradient);
-    color: var(--text-light);
-    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
+    color: #0a0b1e;
+    font-weight: 700;
+    box-shadow: 0 4px 20px var(--glow-yellow);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 30px rgba(102, 126, 234, 0.6);
+    box-shadow: 0 6px 30px rgba(255, 193, 7, 0.8), 0 0 40px rgba(255, 193, 7, 0.4);
 }
 
 .btn-large {
@@ -379,11 +381,14 @@ body {
 .stat-number {
     font-size: 4.5rem;
     font-weight: 900;
-    color: #ffffff;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     line-height: 1;
     margin-bottom: 0.75rem;
-    text-shadow: 0 0 30px rgba(102, 126, 234, 0.5);
-    filter: drop-shadow(0 4px 12px rgba(102, 126, 234, 0.3));
+    text-shadow: 0 0 30px rgba(255, 193, 7, 0.6);
+    filter: drop-shadow(0 4px 12px rgba(255, 193, 7, 0.5));
     display: block;
 }
 
