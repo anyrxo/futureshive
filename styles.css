@@ -348,11 +348,22 @@ body {
     font-size: 1.1rem;
     color: rgba(255, 255, 255, 0.85);
     margin-bottom: 1.5rem;
-    line-height: 1.6;
+    line-height: 1.8;
     font-weight: 400;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.hero-description .highlight-text {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.stack-break {
+    display: block;
+    content: "";
+    margin-top: 0.3rem;
 }
 
 /* Stats Grid */
@@ -990,12 +1001,19 @@ body {
 
 @media (max-width: 640px) {
     .hero-title {
-        font-size: 2rem;
-        line-height: 1.2;
+        font-size: 1.75rem;
+        line-height: 1.3;
     }
 
     .hero-description {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .hero-description .highlight-text {
+        display: block;
+        margin: 0.5rem 0;
+        font-size: 1.05rem;
     }
 
     .stat-number {
