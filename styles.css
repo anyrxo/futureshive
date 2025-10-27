@@ -920,6 +920,25 @@ body {
 }
 
 /* Responsive Design */
+/* Floating Mobile CTA */
+.mobile-cta {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.95);
+    border-top: 1px solid var(--glass-border);
+    backdrop-filter: blur(20px);
+}
+
+.mobile-cta .btn {
+    width: 100%;
+    justify-content: center;
+}
+
 @media (max-width: 968px) {
     .hero-title {
         font-size: 2.75rem;
@@ -957,6 +976,15 @@ body {
 
     .navbar .container {
         padding: 1rem 1.5rem;
+    }
+
+    /* Show mobile CTA and hide navbar button */
+    .mobile-cta {
+        display: block;
+    }
+
+    .navbar .btn-nav {
+        display: none;
     }
 }
 
