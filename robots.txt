@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://futureshive.vercel.app/sitemap.xml

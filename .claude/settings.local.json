@@ -9,7 +9,8 @@
       "Bash(git branch:*)",
       "Bash(git push:*)",
       "Bash(git remote remove:*)",
-      "Read(//c/Users/manna/Downloads/**)"
+      "Read(//c/Users/manna/Downloads/**)",
+      "Bash(291 Days Results\"\n- Comprehensive meta description highlighting key benefits\n- Added keywords meta tag for trading-related terms\n- Open Graph tags for Facebook/LinkedIn sharing with preview image\n- Twitter Card tags for Twitter sharing optimization\n- Canonical URL to prevent duplicate content issues\n\nStructured Data:\n- Schema.org JSON-LD for EducationalOrganization\n- Rich snippets for search engines showing contact info and offers\n- Helps Google understand business type and services\n\nImage Optimization:\n- Descriptive, keyword-rich alt text for all result images\n- Added lazy loading to all images for better page speed\n- Improved accessibility and SEO value\n\nTechnical SEO:\n- robots.txt file allowing all crawlers\n- sitemap.xml with all pages and priorities\n- Preconnect and DNS prefetch for external resources\n- Deferred JavaScript loading for faster initial page load\n- Preload critical CSS resources\n\nPerformance:\n- Added crossorigin attributes to preconnect\n- Lazy loading images below the fold\n- Optimized script loading with defer attribute\n- Better resource prioritization\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
     ],
     "deny": [],
     "ask": []
