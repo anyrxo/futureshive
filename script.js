@@ -30,7 +30,7 @@ function animateCounter(element) {
 
 // Intersection Observer for Counter Animation
 const observerOptions = {
-    threshold: 0.5,
+    threshold: 0.1,
     rootMargin: '0px'
 };
 
@@ -43,9 +43,20 @@ const counterObserver = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all stat numbers
-document.querySelectorAll('.stat-number').forEach(stat => {
-    counterObserver.observe(stat);
+// Initialize counters on page load and observe for scroll
+document.addEventListener('DOMContentLoaded', function() {
+    const statNumbers = document.querySelectorAll('.stat-number');
+
+    // Set initial values immediately
+    statNumbers.forEach(stat => {
+        const target = parseInt(stat.getAttribute('data-count'));
+        stat.textContent = target;
+    });
+
+    // Then observe for animation when scrolled into view
+    statNumbers.forEach(stat => {
+        counterObserver.observe(stat);
+    });
 });
 
 // Smooth Scroll for Anchor Links
