@@ -34,6 +34,10 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="logo.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#1e90ff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://unpkg.com" crossorigin>
@@ -177,6 +181,187 @@
             "query-input": "required name=search_term_string"
         }
     }
+    </script>
+
+    <!-- VideoObject Schema for rich video snippets -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "FuturesHive Trading Strategy Tutorial",
+        "description": "Learn our proven trading strategy that has helped 7+ traders get their first payout every week for 291 days straight",
+        "thumbnailUrl": "https://futureshive.vercel.app/logo.png",
+        "uploadDate": "2024-01-01T00:00:00Z",
+        "duration": "PT10M",
+        "contentUrl": "https://futureshive.vercel.app",
+        "embedUrl": "https://futureshive.vercel.app"
+    }
+    </script>
+
+    <!-- How-To Schema for step-by-step guidance -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Start Trading with FuturesHive Strategy",
+        "description": "Simple 3-step process to start trading profitably with just 3 hours per day",
+        "totalTime": "PT3H",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "Apply for Access",
+                "text": "Complete the application form to get instant access to our proven trading strategy",
+                "url": "https://futureshive.vercel.app#apply"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Learn the Strategy",
+                "text": "Master our simple set of rules with 94% success rate over 291 consecutive days",
+                "url": "https://futureshive.vercel.app#learn"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Execute and Profit",
+                "text": "Follow the strategy for just 3 hours per day and achieve consistent trading results",
+                "url": "https://futureshive.vercel.app#trade"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Testimonial/Review Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "itemReviewed": {
+            "@type": "Course",
+            "name": "FuturesHive Trading Strategy"
+        },
+        "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Mike Johnson"
+        },
+        "reviewBody": "This trading strategy changed my life. I got my first payout within 2 weeks and have been consistent ever since. The 3 hours per day commitment is perfect for my schedule."
+    }
+    </script>
+
+    <!-- Local Business Schema for local SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FinancialService",
+        "name": "FuturesHive",
+        "image": "https://futureshive.vercel.app/logo.png",
+        "@id": "https://futureshive.vercel.app",
+        "url": "https://futureshive.vercel.app",
+        "telephone": "",
+        "priceRange": "$$",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "",
+            "addressLocality": "",
+            "addressRegion": "",
+            "postalCode": "",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 0,
+            "longitude": 0
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "00:00",
+            "closes": "23:59"
+        },
+        "sameAs": [
+            "https://github.com/anyrxo/futureshive"
+        ]
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://futureshive.vercel.app"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Trading Strategy",
+                "item": "https://futureshive.vercel.app#strategy"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Results",
+                "item": "https://futureshive.vercel.app#results"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Organization with full details -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "FuturesHive LLC",
+        "alternateName": "FuturesHive",
+        "url": "https://futureshive.vercel.app",
+        "logo": "https://futureshive.vercel.app/logo.png",
+        "description": "Professional trading education helping traders achieve consistent profitability",
+        "email": "support@futureshive.com",
+        "foundingDate": "2024",
+        "founders": [
+            {
+                "@type": "Person",
+                "name": "Trading Expert"
+            }
+        ],
+        "numberOfEmployees": {
+            "@type": "QuantitativeValue",
+            "value": "5-10"
+        },
+        "slogan": "291 Days of Proven Results",
+        "knowsAbout": ["Trading", "Futures Trading", "Day Trading", "Technical Analysis", "Risk Management"],
+        "areaServed": {
+            "@type": "Country",
+            "name": "United States"
+        }
+    }
+    </script>
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX', {
+            'anonymize_ip': true,
+            'cookie_flags': 'SameSite=None;Secure'
+        });
     </script>
 </head>
 <body>

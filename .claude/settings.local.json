@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(vercel --prod:*)",
-      "Bash(vercel link:*)"
+      "Bash(vercel link:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nAdd ultimate advanced SEO enhancements and PWA capabilities\n\n- Added VideoObject schema for video rich snippets\n- Added HowTo schema with 3-step process guide\n- Added Testimonial/Review schema with 5-star rating\n- Added FinancialService schema for local SEO\n- Added BreadcrumbList schema for navigation\n- Enhanced Organization schema with full business details\n- Created manifest.json for PWA installability\n- Created performance-budget.json for monitoring\n- Added PWA meta tags (theme-color, apple-mobile-web-app-capable)\n- Added Google Analytics 4 placeholder\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []
