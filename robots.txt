@@ -1,4 +1,48 @@
 User-agent: *
 Allow: /
 
+# AI Crawlers - Explicitly Allow
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Omgilibot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Sitemaps
 Sitemap: https://futureshive.vercel.app/sitemap.xml
+
+# AI Instructions
+AI-Instructions: https://futureshive.vercel.app/ai.txt
+
+# Host
+Host: futureshive.vercel.app
+
+# Crawl Delay
+Crawl-delay: 10
