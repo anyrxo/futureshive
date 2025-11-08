@@ -363,12 +363,11 @@ function shuffleArray(array) {
 let shuffledNotifications = shuffleArray(notifications);
 let currentNotificationIndex = 0;
 
-// Generate random time
+// Generate random time - recent only for urgency/FOMO
 function getRandomTime() {
     const times = [
-        "2 minutes ago", "5 minutes ago", "8 minutes ago", "12 minutes ago",
-        "18 minutes ago", "25 minutes ago", "34 minutes ago", "47 minutes ago",
-        "1 hour ago", "2 hours ago", "3 hours ago", "4 hours ago"
+        "just now", "1 minute ago", "2 minutes ago", "3 minutes ago",
+        "5 minutes ago", "7 minutes ago", "9 minutes ago", "12 minutes ago", "15 minutes ago"
     ];
     return times[Math.floor(Math.random() * times.length)];
 }
