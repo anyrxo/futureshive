@@ -304,48 +304,72 @@ setTimeout(() => {
 
 // Notification Popup functionality
 const notifications = [
-    {
-        name: "Mike from Chicago",
-        message: "just got access to the strategy",
-        time: "8 minutes ago",
-        initial: "M"
-    },
-    {
-        name: "Sarah from Austin",
-        message: "just joined",
-        time: "34 minutes ago",
-        initial: "S"
-    },
-    {
-        name: "James from Seattle",
-        message: "just started learning the strategy",
-        time: "1 hour ago",
-        initial: "J"
-    },
-    {
-        name: "Alex from Phoenix",
-        message: "just signed up",
-        time: "2 hours ago",
-        initial: "A"
-    },
-    {
-        name: "Jordan from Denver",
-        message: "just got access",
-        time: "3 hours ago",
-        initial: "J"
-    }
+    // Male names (27 out of 30 = 90%)
+    { name: "Marcus from Dallas", message: "just got his first payout", initial: "M" },
+    { name: "Brandon from Phoenix", message: "just started the strategy", initial: "B" },
+    { name: "Tyler from Miami", message: "just got access", initial: "T" },
+    { name: "Derek from Atlanta", message: "just joined the program", initial: "D" },
+    { name: "Justin from Boston", message: "just got verified results", initial: "J" },
+    { name: "Kevin from Seattle", message: "just completed the training", initial: "K" },
+    { name: "Ryan from Chicago", message: "just got his payout", initial: "R" },
+    { name: "Chris from Denver", message: "just signed up", initial: "C" },
+    { name: "Josh from Houston", message: "just started trading", initial: "J" },
+    { name: "Matt from Portland", message: "just got access to the strategy", initial: "M" },
+    { name: "Daniel from Austin", message: "just joined", initial: "D" },
+    { name: "Kyle from Nashville", message: "just got his first win", initial: "K" },
+    { name: "Andrew from San Diego", message: "just started learning", initial: "A" },
+    { name: "Jake from Charlotte", message: "just got verified", initial: "J" },
+    { name: "Nick from Tampa", message: "just completed setup", initial: "N" },
+    { name: "Ethan from Vegas", message: "just got access", initial: "E" },
+    { name: "Connor from Raleigh", message: "just signed up", initial: "C" },
+    { name: "Blake from Memphis", message: "just started the course", initial: "B" },
+    { name: "Trevor from Orlando", message: "just got his payout", initial: "T" },
+    { name: "Garrett from Columbus", message: "just joined the community", initial: "G" },
+    { name: "Mason from Indianapolis", message: "just got access", initial: "M" },
+    { name: "Logan from Milwaukee", message: "just started trading", initial: "L" },
+    { name: "Austin from Kansas City", message: "just got verified", initial: "A" },
+    { name: "Jordan from San Antonio", message: "just completed training", initial: "J" },
+    { name: "Caleb from Detroit", message: "just got his first payout", initial: "C" },
+    { name: "Dylan from Philadelphia", message: "just signed up", initial: "D" },
+    { name: "Hunter from Baltimore", message: "just got access to strategy", initial: "H" },
+    // Female names (3 out of 30 = 10%)
+    { name: "Ashley from LA", message: "just got her first payout", initial: "A" },
+    { name: "Taylor from New York", message: "just started the program", initial: "T" },
+    { name: "Morgan from Sacramento", message: "just got verified results", initial: "M" }
 ];
 
+// Shuffle array function
+function shuffleArray(array) {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+}
+
+// Randomize notifications on page load
+let shuffledNotifications = shuffleArray(notifications);
 let currentNotificationIndex = 0;
+
+// Generate random time
+function getRandomTime() {
+    const times = [
+        "2 minutes ago", "5 minutes ago", "8 minutes ago", "12 minutes ago",
+        "18 minutes ago", "25 minutes ago", "34 minutes ago", "47 minutes ago",
+        "1 hour ago", "2 hours ago", "3 hours ago", "4 hours ago"
+    ];
+    return times[Math.floor(Math.random() * times.length)];
+}
 
 function showNotification() {
     const popup = document.getElementById('notificationPopup');
-    const notification = notifications[currentNotificationIndex];
+    const notification = shuffledNotifications[currentNotificationIndex];
 
-    // Update notification content
+    // Update notification content with random time
     popup.querySelector('.notification-avatar span').textContent = notification.initial;
     popup.querySelector('.notification-text p').innerHTML = `<strong>${notification.name}</strong> ${notification.message}`;
-    popup.querySelector('.notification-time').textContent = notification.time;
+    popup.querySelector('.notification-time').textContent = getRandomTime();
 
     // Show notification with animation
     popup.classList.add('show');
@@ -355,8 +379,12 @@ function showNotification() {
         popup.classList.remove('show');
     }, 6000);
 
-    // Move to next notification
-    currentNotificationIndex = (currentNotificationIndex + 1) % notifications.length;
+    // Move to next notification, reshuffle when done
+    currentNotificationIndex++;
+    if (currentNotificationIndex >= shuffledNotifications.length) {
+        currentNotificationIndex = 0;
+        shuffledNotifications = shuffleArray(notifications);
+    }
 }
 
 // Show first notification after 4 seconds
