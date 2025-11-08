@@ -1061,16 +1061,17 @@ body {
 
     .section-title {
         font-size: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
         line-height: 1.2;
     }
 
     .results {
         padding: 0 0 5rem;
+        margin-top: -0.5rem;
     }
 
     .trustpilot-badge {
-        margin: 1rem 0 0.5rem;
+        margin: 1rem 0 0;
     }
 
     .stats-grid {

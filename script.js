@@ -470,26 +470,7 @@ document.querySelectorAll('.feature-card, .result-card').forEach(card => {
     });
 });
 
-// Track user engagement time
-let engagementTime = 0;
-const engagementInterval = setInterval(() => {
-    engagementTime++;
-
-    // Show modal again after 30 seconds if not submitted
-    if (engagementTime === 30) {
-        const modal = document.getElementById('leadModal');
-        if (modal.style.display !== 'flex' && !localStorage.getItem('formSubmitted')) {
-            openLeadModal();
-        }
-    }
-}, 1000);
-
-// Add page visibility tracking
-document.addEventListener('visibilitychange', () => {
-    if (document.hidden) {
-        clearInterval(engagementInterval);
-    }
-});
+// Engagement tracking removed - modal only opens on button click
 
 // Make modal functions globally accessible
 window.openLeadModal = openLeadModal;
