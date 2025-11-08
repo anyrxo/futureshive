@@ -146,38 +146,10 @@
         }
     }
 
-    // Create related content links
+    // Create related content links - DISABLED
     function createRelatedLinks() {
-        const relatedPages = [
-            { url: '/privacy-policy.html', title: 'Privacy Policy' },
-            { url: '/refund-policy.html', title: 'Refund Policy' }
-        ];
-
-        const currentPath = window.location.pathname;
-
-        // Filter out current page
-        const related = relatedPages.filter(page => page.url !== currentPath);
-
-        if (related.length === 0) return;
-
-        const relatedContainer = document.createElement('aside');
-        relatedContainer.className = 'related-links';
-        relatedContainer.innerHTML = '<h3>Related Pages</h3>';
-
-        const ul = document.createElement('ul');
-        related.forEach(page => {
-            const li = document.createElement('li');
-            li.innerHTML = `<a href="${page.url}" title="${page.title}" rel="related">${page.title}</a>`;
-            ul.appendChild(li);
-        });
-
-        relatedContainer.appendChild(ul);
-
-        // Insert before footer
-        const footer = document.querySelector('footer');
-        if (footer) {
-            footer.parentNode.insertBefore(relatedContainer, footer);
-        }
+        // Related pages section removed per user request
+        return;
     }
 
     // Create topic clusters (pillar page linking)
