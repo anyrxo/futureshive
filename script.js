@@ -293,14 +293,14 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Show modal after delay (8 seconds instead of 5 for better UX)
+// Show modal after delay (15 seconds for better UX)
 setTimeout(() => {
     // Only show if user hasn't already opened it
     const modal = document.getElementById('leadModal');
     if (modal.style.display !== 'flex') {
         openLeadModal();
     }
-}, 8000);
+}, 15000);
 
 // Notification Popup functionality - Male names (27/30 = 90%), International cities
 const notifications = [
