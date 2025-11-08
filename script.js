@@ -302,40 +302,51 @@ setTimeout(() => {
     }
 }, 8000);
 
-// Notification Popup functionality
+// Notification Popup functionality - Male names (27/30 = 90%), International cities
 const notifications = [
-    // Male names (27 out of 30 = 90%)
+    // USA - 18 names (60%)
     { name: "Marcus from Dallas", message: "just got his first payout", initial: "M" },
     { name: "Brandon from Phoenix", message: "just started the strategy", initial: "B" },
     { name: "Tyler from Miami", message: "just got access", initial: "T" },
     { name: "Derek from Atlanta", message: "just joined the program", initial: "D" },
     { name: "Justin from Boston", message: "just got verified results", initial: "J" },
-    { name: "Kevin from Seattle", message: "just completed the training", initial: "K" },
     { name: "Ryan from Chicago", message: "just got his payout", initial: "R" },
-    { name: "Chris from Denver", message: "just signed up", initial: "C" },
     { name: "Josh from Houston", message: "just started trading", initial: "J" },
     { name: "Matt from Portland", message: "just got access to the strategy", initial: "M" },
-    { name: "Daniel from Austin", message: "just joined", initial: "D" },
     { name: "Kyle from Nashville", message: "just got his first win", initial: "K" },
-    { name: "Andrew from San Diego", message: "just started learning", initial: "A" },
     { name: "Jake from Charlotte", message: "just got verified", initial: "J" },
-    { name: "Nick from Tampa", message: "just completed setup", initial: "N" },
     { name: "Ethan from Vegas", message: "just got access", initial: "E" },
-    { name: "Connor from Raleigh", message: "just signed up", initial: "C" },
-    { name: "Blake from Memphis", message: "just started the course", initial: "B" },
-    { name: "Trevor from Orlando", message: "just got his payout", initial: "T" },
-    { name: "Garrett from Columbus", message: "just joined the community", initial: "G" },
-    { name: "Mason from Indianapolis", message: "just got access", initial: "M" },
-    { name: "Logan from Milwaukee", message: "just started trading", initial: "L" },
-    { name: "Austin from Kansas City", message: "just got verified", initial: "A" },
-    { name: "Jordan from San Antonio", message: "just completed training", initial: "J" },
-    { name: "Caleb from Detroit", message: "just got his first payout", initial: "C" },
-    { name: "Dylan from Philadelphia", message: "just signed up", initial: "D" },
-    { name: "Hunter from Baltimore", message: "just got access to strategy", initial: "H" },
-    // Female names (3 out of 30 = 10%)
+    { name: "Blake from Denver", message: "just started the course", initial: "B" },
+    { name: "Trevor from Seattle", message: "just got his payout", initial: "T" },
+    { name: "Mason from San Diego", message: "just got access", initial: "M" },
+    { name: "Logan from Austin", message: "just started trading", initial: "L" },
+    { name: "Caleb from Philadelphia", message: "just got his first payout", initial: "C" },
+    { name: "Dylan from Tampa", message: "just signed up", initial: "D" },
+    { name: "Hunter from Orlando", message: "just got verified", initial: "H" },
+
+    // UK - 3 names (10%)
+    { name: "Oliver from London", message: "just got his first payout", initial: "O" },
+    { name: "James from Manchester", message: "just started trading", initial: "J" },
+    { name: "Harry from Birmingham", message: "just got access", initial: "H" },
+
+    // Canada - 2 names (7%)
+    { name: "Liam from Toronto", message: "just joined the program", initial: "L" },
+    { name: "Noah from Vancouver", message: "just got verified", initial: "N" },
+
+    // Australia - 2 names (7%)
+    { name: "Jack from Sydney", message: "just started the strategy", initial: "J" },
+    { name: "Connor from Melbourne", message: "just got his payout", initial: "C" },
+
+    // Singapore - 1 name (3%)
+    { name: "Wei from Singapore", message: "just got access", initial: "W" },
+
+    // Germany - 1 name (3%)
+    { name: "Leon from Berlin", message: "just started trading", initial: "L" },
+
+    // Female names (3/30 = 10%) - USA, UK, Canada
     { name: "Ashley from LA", message: "just got her first payout", initial: "A" },
-    { name: "Taylor from New York", message: "just started the program", initial: "T" },
-    { name: "Morgan from Sacramento", message: "just got verified results", initial: "M" }
+    { name: "Emily from London", message: "just started the program", initial: "E" },
+    { name: "Sophie from Toronto", message: "just got verified", initial: "S" }
 ];
 
 // Shuffle array function
@@ -385,13 +396,22 @@ function showNotification() {
         currentNotificationIndex = 0;
         shuffledNotifications = shuffleArray(notifications);
     }
+
+    // Schedule next notification with random delay
+    scheduleNextNotification();
 }
 
-// Show first notification after 4 seconds
-setTimeout(showNotification, 4000);
+// Random delay between notifications (12-25 seconds)
+function getRandomDelay() {
+    return Math.floor(Math.random() * (25000 - 12000 + 1)) + 12000;
+}
 
-// Show notification every 18 seconds
-setInterval(showNotification, 18000);
+function scheduleNextNotification() {
+    setTimeout(showNotification, getRandomDelay());
+}
+
+// Show first notification after random initial delay (3-6 seconds)
+setTimeout(showNotification, Math.floor(Math.random() * 3000) + 3000);
 
 // Close notification when clicked
 document.getElementById('notificationPopup').addEventListener('click', function() {
