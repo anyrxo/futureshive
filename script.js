@@ -293,14 +293,7 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Show modal after delay (15 seconds for better UX)
-setTimeout(() => {
-    // Only show if user hasn't already opened it
-    const modal = document.getElementById('leadModal');
-    if (modal.style.display !== 'flex') {
-        openLeadModal();
-    }
-}, 15000);
+// Auto-popup removed - modal only opens when user clicks button
 
 // Notification Popup functionality - Male names (27/30 = 90%), International cities
 const notifications = [
