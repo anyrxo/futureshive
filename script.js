@@ -107,14 +107,26 @@ window.addEventListener('scroll', () => {
 
 // Modal Functions
 function openLeadModal() {
+    console.log('🔵 openLeadModal called');
     const modal = document.getElementById('leadModal');
+    if (!modal) {
+        console.error('❌ Modal element not found!');
+        return;
+    }
+    console.log('✅ Modal element found:', modal);
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
 
     // Add entrance animation
     setTimeout(() => {
-        modal.querySelector('.modal-content').style.opacity = '1';
-        modal.querySelector('.modal-content').style.transform = 'translateY(0)';
+        const modalContent = modal.querySelector('.modal-content');
+        if (modalContent) {
+            modalContent.style.opacity = '1';
+            modalContent.style.transform = 'translateY(0)';
+            console.log('✅ Modal animation applied');
+        } else {
+            console.error('❌ Modal content not found!');
+        }
     }, 10);
 }
 
@@ -439,4 +451,10 @@ document.addEventListener('visibilitychange', () => {
     }
 });
 
+// Make modal functions globally accessible
+window.openLeadModal = openLeadModal;
+window.closeLeadModal = closeLeadModal;
+
 console.log('🚀 FuturesHive landing page loaded successfully!');
+console.log('✅ openLeadModal is available globally:', typeof window.openLeadModal === 'function');
+console.log('✅ closeLeadModal is available globally:', typeof window.closeLeadModal === 'function');
