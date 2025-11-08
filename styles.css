@@ -209,9 +209,9 @@ body {
 
 .btn-primary {
     background: var(--primary-gradient);
-    color: #0a0b1e;
+    color: #ffffff;
     font-weight: 700;
-    box-shadow: 0 4px 20px var(--glow-yellow);
+    box-shadow: 0 4px 20px rgba(30, 144, 255, 0.5);
 }
 
 .btn-primary:hover {
@@ -565,6 +565,25 @@ body {
 .feature-card p {
     color: var(--text-gray);
     line-height: 1.7;
+}
+
+/* Trustpilot Badge */
+.trustpilot-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 1.5rem;
+}
+
+.trustpilot-badge img {
+    max-width: 200px;
+    height: auto;
+    opacity: 0.9;
+    transition: opacity 0.3s;
+}
+
+.trustpilot-badge img:hover {
+    opacity: 1;
 }
 
 /* Results Section */
