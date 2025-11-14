@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+    <!-- Blog Index Page -->
+    <url>
+        <loc>https://futureshive.vercel.app/blog/</loc>
+        <lastmod>2025-11-13T00:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Blog Post: ES and NQ Futures Trading Guide 2025 -->
+    <url>
+        <loc>https://futureshive.vercel.app/blog/es-nq-futures-trading-guide-2025.html</loc>
+        <lastmod>2025-11-13T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <news:news>
+            <news:publication>
+                <news:name>FuturesHive</news:name>
+                <news:language>en</news:language>
+            </news:publication>
+            <news:publication_date>2025-01-15T08:00:00+00:00</news:publication_date>
+            <news:title>Ultimate Guide to ES and NQ Futures Trading (2025)</news:title>
+            <news:keywords>ES futures, NQ futures, E-mini trading, futures trading, margin requirements, trading strategies</news:keywords>
+        </news:news>
+    </url>
+
+    <!-- Blog Post: TradingView vs Quanttower Comparison 2025 -->
+    <url>
+        <loc>https://futureshive.vercel.app/blog/tradingview-vs-quanttower-2025-comparison.html</loc>
+        <lastmod>2025-11-13T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <news:news>
+            <news:publication>
+                <news:name>FuturesHive</news:name>
+                <news:language>en</news:language>
+            </news:publication>
+            <news:publication_date>2025-01-15T10:00:00+00:00</news:publication_date>
+            <news:title>TradingView vs Quanttower (2025): Complete Platform Comparison</news:title>
+            <news:keywords>TradingView, Quanttower, trading platforms, futures trading software, platform comparison, trading tools</news:keywords>
+        </news:news>
+    </url>
+
+    <!-- Blog Post: Futures Trading Strategies and Indicators 2025 -->
+    <url>
+        <loc>https://futureshive.vercel.app/blog/futures-trading-strategies-indicators-2025.html</loc>
+        <lastmod>2025-11-13T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <news:news>
+            <news:publication>
+                <news:name>FuturesHive</news:name>
+                <news:language>en</news:language>
+            </news:publication>
+            <news:publication_date>2025-01-15T12:00:00+00:00</news:publication_date>
+            <news:title>Top 10 Futures Trading Strategies and Indicators That Work in 2025</news:title>
+            <news:keywords>trading strategies, technical indicators, RSI, MACD, VWAP, moving averages, momentum trading, trend following</news:keywords>
+        </news:news>
+    </url>
+
+</urlset>

@@ -1,42 +1,56 @@
 User-agent: *
 Allow: /
+Allow: /blog/
+Allow: /blog/*.html
 
 # AI Crawlers - Explicitly Allow
 User-agent: GPTBot
 Allow: /
+Allow: /blog/
 
 User-agent: ChatGPT-User
 Allow: /
+Allow: /blog/
 
 User-agent: Claude-Web
 Allow: /
+Allow: /blog/
 
 User-agent: Anthropic-AI
 Allow: /
+Allow: /blog/
 
 User-agent: PerplexityBot
 Allow: /
+Allow: /blog/
 
 User-agent: Google-Extended
 Allow: /
+Allow: /blog/
 
 User-agent: CCBot
 Allow: /
+Allow: /blog/
 
 User-agent: cohere-ai
 Allow: /
+Allow: /blog/
 
 User-agent: Omgilibot
 Allow: /
+Allow: /blog/
 
 User-agent: FacebookBot
 Allow: /
+Allow: /blog/
 
 User-agent: Applebot-Extended
 Allow: /
+Allow: /blog/
 
 # Sitemaps
 Sitemap: https://futureshive.vercel.app/sitemap.xml
+Sitemap: https://futureshive.vercel.app/blog-sitemap.xml
 
 # AI Instructions
 AI-Instructions: https://futureshive.vercel.app/ai.txt
