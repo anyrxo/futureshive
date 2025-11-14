@@ -43,10 +43,16 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../styles.css">
     <style>
+        body {
+            background: #000000;
+        }
+
         .blog-hero {
             padding: 6rem 0 4rem;
             text-align: center;
-            background: linear-gradient(135deg, rgba(30, 144, 255, 0.1) 0%, rgba(0, 191, 255, 0.05) 100%);
+            background: transparent;
+            position: relative;
+            z-index: 1;
         }
         .blog-hero-title {
             font-size: 3rem;
@@ -56,7 +62,7 @@
         }
         .blog-hero-subtitle {
             font-size: 1.25rem;
-            color: #d1d5db;
+            color: #b4b4c8;
             max-width: 700px;
             margin: 0 auto;
         }
@@ -67,14 +73,19 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 2rem;
+            position: relative;
+            z-index: 1;
         }
         .blog-card {
-            background: rgba(30, 144, 255, 0.05);
-            border: 1px solid rgba(30, 144, 255, 0.2);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 16px;
             overflow: hidden;
             transition: all 0.3s ease;
             cursor: pointer;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
         }
         .blog-card:hover {
             transform: translateY(-8px);
@@ -82,19 +93,20 @@
             box-shadow: 0 20px 40px rgba(30, 144, 255, 0.2);
         }
         .blog-card-header {
-            background: linear-gradient(135deg, rgba(30, 144, 255, 0.2) 0%, rgba(0, 191, 255, 0.1) 100%);
+            background: linear-gradient(135deg, rgba(30, 144, 255, 0.15) 0%, rgba(0, 102, 204, 0.1) 100%);
             padding: 2rem;
-            border-bottom: 1px solid rgba(30, 144, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
         .blog-card-category {
             display: inline-block;
-            background: rgba(30, 144, 255, 0.3);
+            background: rgba(30, 144, 255, 0.2);
             color: #1e90ff;
             padding: 0.5rem 1rem;
             border-radius: 20px;
             font-size: 0.85rem;
             font-weight: 600;
             margin-bottom: 1rem;
+            border: 1px solid rgba(30, 144, 255, 0.3);
         }
         .blog-card-title {
             font-size: 1.5rem;
@@ -104,12 +116,13 @@
             line-height: 1.3;
         }
         .blog-card-excerpt {
-            color: #d1d5db;
+            color: #b4b4c8;
             font-size: 0.95rem;
             line-height: 1.6;
         }
         .blog-card-body {
             padding: 1.5rem 2rem 2rem;
+            background: rgba(0, 0, 0, 0.2);
         }
         .blog-card-meta {
             display: flex;
@@ -131,14 +144,16 @@
             margin-top: 1rem;
         }
         .blog-tag {
-            background: rgba(30, 144, 255, 0.1);
+            background: rgba(30, 144, 255, 0.15);
             color: #1e90ff;
             padding: 0.35rem 0.75rem;
             border-radius: 12px;
             font-size: 0.8rem;
+            border: 1px solid rgba(30, 144, 255, 0.3);
         }
         .blog-card-footer {
             padding: 0 2rem 2rem;
+            background: rgba(0, 0, 0, 0.2);
         }
         .read-more-btn {
             display: inline-flex;
@@ -151,12 +166,15 @@
         }
         .read-more-btn:hover {
             gap: 1rem;
+            color: #0066cc;
         }
         .breadcrumb {
             max-width: 1200px;
             margin: 2rem auto 0;
             padding: 0 1.5rem;
             font-size: 0.9rem;
+            position: relative;
+            z-index: 1;
         }
         .breadcrumb a {
             color: #1e90ff;
@@ -164,6 +182,7 @@
         }
         .breadcrumb a:hover {
             text-decoration: underline;
+            color: #0066cc;
         }
         .breadcrumb span {
             color: #888;
