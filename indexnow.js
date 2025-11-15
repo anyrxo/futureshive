@@ -5,9 +5,9 @@
     'use strict';
 
     const config = {
-        host: 'futureshive.vercel.app',
+        host: 'futureshive.com',
         key: '4f8b2e9a1c3d6e7f0a9b8c7d6e5f4a3b', // Generate your own at bing.com/indexnow
-        keyLocation: 'https://futureshive.vercel.app/4f8b2e9a1c3d6e7f0a9b8c7d6e5f4a3b.txt',
+        keyLocation: 'https://futureshive.com/4f8b2e9a1c3d6e7f0a9b8c7d6e5f4a3b.txt',
         endpoints: [
             'https://api.indexnow.org/IndexNow',
             'https://www.bing.com/IndexNow',
@@ -170,5 +170,5 @@
 })();
 
 // Usage examples:
-// IndexNow.submit('https://futureshive.vercel.app/new-page.html');
-// IndexNow.submitBatch(['https://futureshive.vercel.app/page1.html', 'https://futureshive.vercel.app/page2.html']);
+// IndexNow.submit('https://futureshive.com/new-page.html');
+// IndexNow.submitBatch(['https://futureshive.com/page1.html', 'https://futureshive.com/page2.html']);

@@ -5,7 +5,7 @@
     'use strict';
 
     const config = {
-        domain: 'https://futureshive.vercel.app',
+        domain: 'https://futureshive.com',
         defaultPriority: 0.5,
         defaultChangeFreq: 'weekly',
         pages: [

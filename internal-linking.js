@@ -5,7 +5,7 @@
     'use strict';
 
     const config = {
-        domain: 'https://futureshive.vercel.app',
+        domain: 'https://futureshive.com',
         keywords: {
             'trading strategy': {
                 url: '/',
