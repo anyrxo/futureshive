@@ -6,8 +6,8 @@
 
     const config = {
         host: 'futureshive.com',
-        key: '4f8b2e9a1c3d6e7f0a9b8c7d6e5f4a3b', // Generate your own at bing.com/indexnow
-        keyLocation: 'https://futureshive.com/4f8b2e9a1c3d6e7f0a9b8c7d6e5f4a3b.txt',
+        key: '840c3166728346ed81e4d8ecb16e98a1', // Generated via Bing Webmaster Tools
+        keyLocation: 'https://futureshive.com/840c3166728346ed81e4d8ecb16e98a1.txt',
         endpoints: [
             'https://api.indexnow.org/IndexNow',
             'https://www.bing.com/IndexNow',
@@ -172,3 +172,12 @@
 // Usage examples:
 // IndexNow.submit('https://futureshive.com/new-page.html');
 // IndexNow.submitBatch(['https://futureshive.com/page1.html', 'https://futureshive.com/page2.html']);
+
+// Manual API submission example:
+// POST to https://api.indexnow.org/IndexNow
+// {
+//   "host": "futureshive.com",
+//   "key": "840c3166728346ed81e4d8ecb16e98a1",
+//   "keyLocation": "https://futureshive.com/840c3166728346ed81e4d8ecb16e98a1.txt",
+//   "urlList": ["https://futureshive.com/"]
+// }
