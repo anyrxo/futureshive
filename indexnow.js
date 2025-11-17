@@ -96,16 +96,61 @@
     function submitSitemap() {
         const urls = [
             `https://${config.host}/`,
-            `https://${config.host}/privacy-policy.html`,
-            `https://${config.host}/refund-policy.html`
+            `https://${config.host}/blog/`,
+            `https://${config.host}/privacy-policy`,
+            `https://${config.host}/refund-policy`,
+            // Blog posts - all 36 posts
+            `https://${config.host}/blog/es-nq-futures-trading-guide-2025`,
+            `https://${config.host}/blog/micro-emini-futures-mes-mnq-guide-2025`,
+            `https://${config.host}/blog/how-to-start-futures-trading-beginners-2025`,
+            `https://${config.host}/blog/best-futures-brokers-day-traders-2025`,
+            `https://${config.host}/blog/futures-trading-strategies-indicators-2025`,
+            `https://${config.host}/blog/vwap-trading-strategy-futures-2025`,
+            `https://${config.host}/blog/moving-average-strategies-futures-2025`,
+            `https://${config.host}/blog/macd-trading-strategy-futures-2025`,
+            `https://${config.host}/blog/rsi-divergence-trading-strategy-2025`,
+            `https://${config.host}/blog/support-resistance-trading-strategy-2025`,
+            `https://${config.host}/blog/fibonacci-retracement-trading-strategy-2025`,
+            `https://${config.host}/blog/candlestick-patterns-trading-guide-2025`,
+            `https://${config.host}/blog/volume-profile-trading-strategy-2025`,
+            `https://${config.host}/blog/order-flow-trading-complete-guide-2025`,
+            `https://${config.host}/blog/footprint-charts-complete-guide-2025`,
+            `https://${config.host}/blog/trading-psychology-overcome-fear-greed-2025`,
+            `https://${config.host}/blog/tradingview-vs-quanttower-2025-comparison`,
+            `https://${config.host}/blog/best-prop-firms-day-traders-2025`,
+            `https://${config.host}/blog/instant-funding-prop-firms-no-evaluation`,
+            `https://${config.host}/blog/how-to-pass-prop-firm-challenge`,
+            `https://${config.host}/blog/what-is-prop-firm-complete-guide`,
+            `https://${config.host}/blog/cheapest-prop-firms-budget-guide`,
+            `https://${config.host}/blog/how-to-choose-prop-firm-guide`,
+            `https://${config.host}/blog/prop-firm-profit-split-comparison`,
+            `https://${config.host}/blog/ftmo-vs-apex-vs-topstep-comparison`,
+            `https://${config.host}/blog/prop-firm-payout-withdrawal-guide`,
+            `https://${config.host}/blog/failed-prop-firm-challenge-what-next`,
+            `https://${config.host}/blog/best-prop-firms-for-scalping`,
+            `https://${config.host}/blog/prop-firm-consistency-rule-minimum-trading-days`,
+            `https://${config.host}/blog/prop-firm-scaling-plan-guide`,
+            `https://${config.host}/blog/tjr-trader-profile-killtec-streetwear`,
+            `https://${config.host}/blog/fabio-valentini-worlds-best-scalper-deepcharts`,
+            `https://${config.host}/blog/andrea-cimi-youtube-trader-deepcharts-morpheus`,
+            `https://${config.host}/blog/anyro-futureshive-multidisciplinary-entrepreneur`,
+            `https://${config.host}/blog/craig-percoco-inevitrade-military-veteran-trader`,
+            `https://${config.host}/blog/pb-blake-pb-trading-nq-futures-specialist`
         ];
 
-        const submitted = localStorage.getItem('indexnow_sitemap_submitted');
+        const submitted = localStorage.getItem('indexnow_sitemap_submitted_v2');
 
         if (!submitted) {
-            submitBatch(urls);
-            localStorage.setItem('indexnow_sitemap_submitted', 'true');
-            console.log('IndexNow: Submitted full sitemap');
+            // Split into smaller batches (Bing prefers max 10000 URLs but smaller batches work better)
+            const batchSize = 100;
+            for (let i = 0; i < urls.length; i += batchSize) {
+                const batch = urls.slice(i, i + batchSize);
+                setTimeout(() => {
+                    submitBatch(batch);
+                }, i * 100); // Stagger submissions
+            }
+            localStorage.setItem('indexnow_sitemap_submitted_v2', Date.now().toString());
+            console.log(`IndexNow: Submitted ${urls.length} URLs in batches`);
         }
     }
 
