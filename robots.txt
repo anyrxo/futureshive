@@ -38,10 +38,16 @@ Allow: /
 
 # Sitemaps
 Sitemap: https://futureshive.com/sitemap.xml
+Sitemap: https://futureshive.com/main-sitemap.xml
 Sitemap: https://futureshive.com/blog-sitemap.xml
 
 # Host
-Host: futureshive.com
+Host: https://futureshive.com
 
-# Crawl Delay
-Crawl-delay: 5
+# Crawl Rate for Bing
+Crawl-delay: 1
+
+# Allow Bing to crawl more frequently
+User-agent: bingbot
+Crawl-delay: 1
+Allow: /

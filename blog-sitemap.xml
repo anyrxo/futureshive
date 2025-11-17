@@ -2,193 +2,426 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-    <!-- Blog Index Page -->
-    <url>
-        <loc>https://futureshive.com/blog/</loc>
-        <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
+  <!-- Futures Trading Guides -->
+  <url>
+    <loc>https://futureshive.com/blog/es-nq-futures-trading-guide-2025</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <news:news>
+      <news:publication>
+        <news:name>FuturesHive</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-15T08:00:00+00:00</news:publication_date>
+      <news:title>Ultimate Guide to ES and NQ Futures Trading (2025)</news:title>
+      <news:keywords>ES futures, NQ futures, E-mini trading, futures trading, margin requirements</news:keywords>
+    </news:news>
+  </url>
 
-    <!-- Blog Post: ES and NQ Futures Trading Guide 2025 -->
-    <url>
-        <loc>https://futureshive.com/blog/es-nq-futures-trading-guide-2025</loc>
-        <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <news:news>
-            <news:publication>
-                <news:name>FuturesHive</news:name>
-                <news:language>en</news:language>
-            </news:publication>
-            <news:publication_date>2025-01-15T08:00:00+00:00</news:publication_date>
-            <news:title>Ultimate Guide to ES and NQ Futures Trading (2025)</news:title>
-            <news:keywords>ES futures, NQ futures, E-mini trading, futures trading, margin requirements, trading strategies</news:keywords>
-        </news:news>
-    </url>
+  <url>
+    <loc>https://futureshive.com/blog/micro-emini-futures-mes-mnq-guide-2025</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <news:news>
+      <news:publication>
+        <news:name>FuturesHive</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-16T08:00:00+00:00</news:publication_date>
+      <news:title>Micro E-mini Futures Guide MES and MNQ (2025)</news:title>
+      <news:keywords>micro futures, MES, MNQ, micro E-mini, beginner trading</news:keywords>
+    </news:news>
+  </url>
 
-    <!-- Blog Post: TradingView vs Quanttower Comparison 2025 -->
-    <url>
-        <loc>https://futureshive.com/blog/tradingview-vs-quanttower-2025-comparison</loc>
-        <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <news:news>
-            <news:publication>
-                <news:name>FuturesHive</news:name>
-                <news:language>en</news:language>
-            </news:publication>
-            <news:publication_date>2025-01-15T10:00:00+00:00</news:publication_date>
-            <news:title>TradingView vs Quanttower (2025): Complete Platform Comparison</news:title>
-            <news:keywords>TradingView, Quanttower, trading platforms, futures trading software, platform comparison, trading tools</news:keywords>
-        </news:news>
-    </url>
+  <url>
+    <loc>https://futureshive.com/blog/how-to-start-futures-trading-beginners-2025</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <news:news>
+      <news:publication>
+        <news:name>FuturesHive</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-17T08:00:00+00:00</news:publication_date>
+      <news:title>How to Start Futures Trading Beginner's Guide 2025</news:title>
+      <news:keywords>futures trading beginners, start trading, futures guide, trading education</news:keywords>
+    </news:news>
+  </url>
 
-    <!-- Blog Post: Futures Trading Strategies and Indicators 2025 -->
-    <url>
-        <loc>https://futureshive.com/blog/futures-trading-strategies-indicators-2025</loc>
-        <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <news:news>
-            <news:publication>
-                <news:name>FuturesHive</news:name>
-                <news:language>en</news:language>
-            </news:publication>
-            <news:publication_date>2025-01-15T12:00:00+00:00</news:publication_date>
-            <news:title>Top 10 Futures Trading Strategies and Indicators That Work in 2025</news:title>
-            <news:keywords>trading strategies, technical indicators, RSI, MACD, VWAP, moving averages, momentum trading, trend following</news:keywords>
-        </news:news>
-    </url>
+  <url>
+    <loc>https://futureshive.com/blog/best-futures-brokers-day-traders-2025</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>FuturesHive</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-18T08:00:00+00:00</news:publication_date>
+      <news:title>Best Futures Brokers for Day Traders 2025</news:title>
+      <news:keywords>futures brokers, day trading, best brokers, trading platforms</news:keywords>
+    </news:news>
+  </url>
 
-    <!-- Blog Post: Best Prop Firms for Day Traders 2025 -->
-    <url>
-        <loc>https://futureshive.com/blog/best-prop-firms-day-traders-2025</loc>
-        <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <news:news>
-            <news:publication>
-                <news:name>FuturesHive</news:name>
-                <news:language>en</news:language>
-            </news:publication>
-            <news:publication_date>2025-01-16T08:00:00+00:00</news:publication_date>
-            <news:title>Best Prop Firms for Day Traders | FTMO, Apex, TopStep Compared</news:title>
-            <news:keywords>prop firms, proprietary trading, FTMO, Apex Trader Funding, TopStep, day trading, funded accounts</news:keywords>
-        </news:news>
-    </url>
+  <!-- Trading Strategies -->
+  <url>
+    <loc>https://futureshive.com/blog/futures-trading-strategies-indicators-2025</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <news:news>
+      <news:publication>
+        <news:name>FuturesHive</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-15T12:00:00+00:00</news:publication_date>
+      <news:title>Top 10 Futures Trading Strategies and Indicators 2025</news:title>
+      <news:keywords>trading strategies, technical indicators, RSI, MACD, VWAP</news:keywords>
+    </news:news>
+  </url>
 
-    <!-- All remaining blog posts -->
-    <url>
-        <loc>https://futureshive.com/blog/instant-funding-prop-firms-no-evaluation</loc>
-        <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://futureshive.com/blog/how-to-pass-prop-firm-challenge</loc>
-        <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://futureshive.com/blog/what-is-prop-firm-complete-guide</loc>
-        <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://futureshive.com/blog/cheapest-prop-firms-budget-guide</loc>
-        <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://futureshive.com/blog/how-to-choose-prop-firm-guide</loc>
-        <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://futureshive.com/blog/prop-firm-profit-split-comparison</loc>
-        <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://futureshive.com/blog/ftmo-vs-apex-vs-topstep-comparison</loc>
-        <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://futureshive.com/blog/prop-firm-payout-withdrawal-guide</loc>
-        <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://futureshive.com/blog/failed-prop-firm-challenge-what-next</loc>
-        <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://futureshive.com/blog/best-prop-firms-for-scalping</loc>
-        <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://futureshive.com/blog/prop-firm-consistency-rule-minimum-trading-days</loc>
-        <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://futureshive.com/blog/prop-firm-scaling-plan-guide</loc>
-        <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://futureshive.com/blog/tjr-trader-profile-killtec-streetwear</loc>
-        <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://futureshive.com/blog/fabio-valentini-worlds-best-scalper-deepcharts</loc>
-        <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://futureshive.com/blog/andrea-cimi-youtube-trader-deepcharts-morpheus</loc>
-        <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://futureshive.com/blog/anyro-futureshive-multidisciplinary-entrepreneur</loc>
-        <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://futureshive.com/blog/craig-percoco-inevitrade-military-veteran-trader</loc>
-        <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://futureshive.com/blog/pb-blake-pb-trading-nq-futures-specialist</loc>
-        <lastmod>2025-11-14T00:00:00+00:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
+  <url>
+    <loc>https://futureshive.com/blog/vwap-trading-strategy-futures-2025</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>FuturesHive</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-19T08:00:00+00:00</news:publication_date>
+      <news:title>VWAP Trading Strategy Complete Guide 2025</news:title>
+      <news:keywords>VWAP, volume weighted average price, trading strategy, day trading</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/moving-average-strategies-futures-2025</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>FuturesHive</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-20T08:00:00+00:00</news:publication_date>
+      <news:title>Moving Average Strategies for Futures Trading 2025</news:title>
+      <news:keywords>moving averages, EMA, SMA, trend following, trading strategy</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/macd-trading-strategy-futures-2025</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>FuturesHive</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-21T08:00:00+00:00</news:publication_date>
+      <news:title>MACD Trading Strategy for Futures 2025</news:title>
+      <news:keywords>MACD, moving average convergence divergence, momentum trading</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/rsi-divergence-trading-strategy-2025</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>FuturesHive</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-22T08:00:00+00:00</news:publication_date>
+      <news:title>RSI Divergence Trading Strategy 2025</news:title>
+      <news:keywords>RSI, relative strength index, divergence trading, overbought oversold</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/support-resistance-trading-strategy-2025</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>FuturesHive</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-23T08:00:00+00:00</news:publication_date>
+      <news:title>Support and Resistance Trading Strategy 2025</news:title>
+      <news:keywords>support resistance, price levels, breakout trading, reversal trading</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/fibonacci-retracement-trading-strategy-2025</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>FuturesHive</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-24T08:00:00+00:00</news:publication_date>
+      <news:title>Fibonacci Retracement Trading Strategy 2025</news:title>
+      <news:keywords>fibonacci, retracement levels, golden ratio, pullback trading</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/candlestick-patterns-trading-guide-2025</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>FuturesHive</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-25T08:00:00+00:00</news:publication_date>
+      <news:title>Candlestick Patterns Trading Guide 2025</news:title>
+      <news:keywords>candlestick patterns, price action, doji, engulfing, hammer</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/volume-profile-trading-strategy-2025</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>FuturesHive</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-26T08:00:00+00:00</news:publication_date>
+      <news:title>Volume Profile Trading Strategy 2025</news:title>
+      <news:keywords>volume profile, POC, value area, institutional trading</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/order-flow-trading-complete-guide-2025</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>FuturesHive</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-27T08:00:00+00:00</news:publication_date>
+      <news:title>Order Flow Trading Complete Guide 2025</news:title>
+      <news:keywords>order flow, market depth, DOM, tape reading, institutional orders</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/footprint-charts-complete-guide-2025</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>FuturesHive</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-28T08:00:00+00:00</news:publication_date>
+      <news:title>Footprint Charts Complete Guide 2025</news:title>
+      <news:keywords>footprint charts, volume analysis, bid ask imbalance, delta</news:keywords>
+    </news:news>
+  </url>
+
+  <!-- Trading Psychology -->
+  <url>
+    <loc>https://futureshive.com/blog/trading-psychology-overcome-fear-greed-2025</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>FuturesHive</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-29T08:00:00+00:00</news:publication_date>
+      <news:title>Trading Psychology: Overcome Fear and Greed 2025</news:title>
+      <news:keywords>trading psychology, mental discipline, fear, greed, emotional control</news:keywords>
+    </news:news>
+  </url>
+
+  <!-- Platform Comparisons -->
+  <url>
+    <loc>https://futureshive.com/blog/tradingview-vs-quanttower-2025-comparison</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>FuturesHive</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-15T10:00:00+00:00</news:publication_date>
+      <news:title>TradingView vs Quanttower 2025 Complete Comparison</news:title>
+      <news:keywords>TradingView, Quanttower, trading platforms, platform comparison</news:keywords>
+    </news:news>
+  </url>
+
+  <!-- Prop Firm Guides -->
+  <url>
+    <loc>https://futureshive.com/blog/best-prop-firms-day-traders-2025</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <news:news>
+      <news:publication>
+        <news:name>FuturesHive</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-16T08:00:00+00:00</news:publication_date>
+      <news:title>Best Prop Firms for Day Traders 2025</news:title>
+      <news:keywords>prop firms, FTMO, Apex, TopStep, funded trading</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/instant-funding-prop-firms-no-evaluation</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/how-to-pass-prop-firm-challenge</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/what-is-prop-firm-complete-guide</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/cheapest-prop-firms-budget-guide</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/how-to-choose-prop-firm-guide</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/prop-firm-profit-split-comparison</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/ftmo-vs-apex-vs-topstep-comparison</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/prop-firm-payout-withdrawal-guide</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/failed-prop-firm-challenge-what-next</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/best-prop-firms-for-scalping</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/prop-firm-consistency-rule-minimum-trading-days</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/prop-firm-scaling-plan-guide</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Trader Profiles -->
+  <url>
+    <loc>https://futureshive.com/blog/tjr-trader-profile-killtec-streetwear</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/fabio-valentini-worlds-best-scalper-deepcharts</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/andrea-cimi-youtube-trader-deepcharts-morpheus</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/anyro-futureshive-multidisciplinary-entrepreneur</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/craig-percoco-inevitrade-military-veteran-trader</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://futureshive.com/blog/pb-blake-pb-trading-nq-futures-specialist</loc>
+    <lastmod>2025-11-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
 </urlset>
